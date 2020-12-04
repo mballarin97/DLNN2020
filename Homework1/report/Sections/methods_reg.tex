@@ -1,0 +1,36 @@
+For the regression task it is better to use a reduced number of hidden layers, and in particular we choose to use $2$ of them.
+Our network will so be composed of:
+\begin{itemize}
+    \item An input layer of one neuron;
+    \item A first hidden layer oh $N_h$ neurons;
+    \item A second hidden layer of $2\cdot N_h$ neurons;
+    \item An output layer of one neuron.
+\end{itemize}
+To avoid vanishing problems in the gradient we will use a rectified linear unit (ReLU) as activation function.
+This simple topology in the network is due to the fact that this problem is "simple" from the neural networks point of view, and adding too many parameters we 
+will be easily led to overfitting. We will so make an extensive use of regularization procedures to avoid these problems. In 
+particular, we will use two main methods:
+\begin{enumerate}
+    \item dropout, which consists of randomly eliminate neurons during the training with probability $p_{drop}$.    
+    \item L2 regularization, which consists of adding a penalty in the loss proportional to the 2-norm
+        of the parameters, i.e. weights and biases. We stress that in pytorch this method is enabled not in the loss
+        function but in the optimizer, using the \lstinline{weight_decay} keyword.
+\end{enumerate}
+We will try two different optimizers:
+\begin{enumerate}
+    \item The stochastic gradient descent with momentum, which is the really basic algorithm for optimization.
+        The addition of the momentum, i.e. the memory of previous steps, really helps to go out of local minima and speeds up convergence;
+    \item the Adam algorithm, adaptive moment estimator, a more advanced algorithm that uses estimations of first and second 
+        moments  of the gradient to adapt the learning rate of each weight of the neural network.
+\end{enumerate}
+The amount of data available for this task is quite limited, we will so apply a cross-validation technique to perform the 
+hyper parameters tuning. This method consists of splitting the training test into $k$ different folds and then, for each
+hyper parameters set, train the network on the union of $k-1$ folds, performing the validation on the one which is missing.
+This approach ensure also better performances, since the validation set is different for each of the iterations, and so we
+cannot end up with a model that perfectly fits one given validation set.
+After the hyper parameters choice is done, we will train the model over the full training test.
+
+We will then optimize the number of hidden units in the layers of the network, the learning rate and the number of epochs
+needed for the training procedure.
+
+Lastly, we will visualize the network features: in particular we will plot the weights histograms and the activation profiles.
