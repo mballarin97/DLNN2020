@@ -16,6 +16,9 @@ particular, we will use two main methods:
         of the parameters, i.e. weights and biases. We stress that in pytorch this method is enabled not in the loss
         function but in the optimizer, using the \lstinline{weight_decay} keyword.
 \end{enumerate}
+However, implementing both forms of regularizations generated sub-optimal results. We so decided to put to $0$ the L2
+regularization, stressing that we can do this without losing generality.
+
 We will try two different optimizers:
 \begin{enumerate}
     \item The stochastic gradient descent with momentum, which is the really basic algorithm for optimization.
@@ -34,3 +37,4 @@ We will then optimize the number of hidden units in the layers of the network, t
 needed for the training procedure.
 
 Lastly, we will visualize the network features: in particular we will plot the weights histograms and the activation profiles.
+We will see that we can actually extract a lot of information, in particular from the activation profiles.

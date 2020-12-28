@@ -27,4 +27,11 @@ Through a random search we will optimize the following parameters:
 \end{itemize}
 
 To further enhance the dataset we will apply a random rotation of $45°$ and some Gaussian noise. To help the network in the learning
-phase we will also normalize the inputs, using the apposite pytorch transformation.
+phase we will also normalize the inputs, using the apposite pytorch transformation. We present the network structure in Figure \ref{fig:cl_net}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/clas_net.png}
+    \caption{Network structure for the classification task. The activation function used is the rectified linear unit.
+    The output digit is selected as the argmax among the $10$ output neurons.}
+    \label{fig:cl_net}
+\end{figure}
