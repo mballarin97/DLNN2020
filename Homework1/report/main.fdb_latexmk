@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber main"] 1609171750 "main.bcf" "main.bbl" "main" 1609172468
-  "main.bcf" 1609172467 100328 ba7ad1cb4674c7ddfbd14022a915b7eb "pdflatex"
+["biber main"] 1609171750 "main.bcf" "main.bbl" "main" 1609317261
+  "main.bcf" 1609317261 100328 ba7ad1cb4674c7ddfbd14022a915b7eb "pdflatex"
   (generated)
   "main.blg"
   "main.bbl"
-["pdflatex"] 1609172463 "/Users/Marco/git/DLNN2020/Homework1/report/main.tex" "/Users/Marco/git/DLNN2020/Homework1/report/main.pdf" "main" 1609172468
-  "/Users/Marco/git/DLNN2020/Homework1/report/main.aux" 1609172467 9955 ceb3704fd0db2bbaacef387c58f9fc10 ""
+["pdflatex"] 1609317256 "/Users/Marco/git/DLNN2020/Homework1/report/main.tex" "/Users/Marco/git/DLNN2020/Homework1/report/main.pdf" "main" 1609317261
+  "/Users/Marco/git/DLNN2020/Homework1/report/main.aux" 1609317261 9955 c28ef4e2065f1df484fafa438ddf93fb ""
   "/Users/Marco/git/DLNN2020/Homework1/report/main.tex" 1609167736 1134 faf05e3ac4d61940cdfe0549d131843b ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1202520719 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -287,21 +287,21 @@
   "Sections/appendix.tex" 1609172105 732 83d89528ad5425e3a6f59ae223f1dddb ""
   "Sections/header.tex" 1607074388 1882 348f89742b6978b187ae82a3a6550aa5 ""
   "Sections/intro.tex" 1607072778 758 4b68f46f1f1451616dd2c555a7ecff18 ""
-  "Sections/methods_class.tex" 1609172457 2792 92c74e99ede523e0cf1c78c84cb6398b ""
+  "Sections/methods_class.tex" 1609317255 2816 4c6ad6cd27675d9c0ebb70a3e4874222 ""
   "Sections/methods_reg.tex" 1609158402 3063 7c00c331d957afc96de186c2d88972ea ""
   "Sections/result_class.tex" 1609171750 2901 ae54ab1a400ca2fca4fb0e5f2bbd3830 ""
-  "Sections/result_reg.tex" 1609172307 3589 05ed5ea7db403ebb3bb583802d1c7082 ""
-  "main.aux" 1609172467 9955 ceb3704fd0db2bbaacef387c58f9fc10 "pdflatex"
+  "Sections/result_reg.tex" 1609316880 3589 e276cca01b697566bf02ce22773e3b67 ""
+  "main.aux" 1609317261 9955 c28ef4e2065f1df484fafa438ddf93fb "pdflatex"
   "main.bbl" 1609171754 466 f7f239c736cf01ac6ce7bd829f9b3c7b "biber main"
-  "main.out" 1609172467 416 f3c906da5b953abfd6096ce9a461aa88 "pdflatex"
-  "main.run.xml" 1609172467 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.out" 1609317261 416 f3c906da5b953abfd6096ce9a461aa88 "pdflatex"
+  "main.run.xml" 1609317261 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
   "main.tex" 1609167736 1134 faf05e3ac4d61940cdfe0549d131843b ""
   (generated)
-  "/Users/Marco/git/DLNN2020/Homework1/report/main.pdf"
   "main.out"
-  "/Users/Marco/git/DLNN2020/Homework1/report/main.log"
   "main.aux"
-  "main.pdf"
   "main.log"
   "main.bcf"
+  "/Users/Marco/git/DLNN2020/Homework1/report/main.log"
+  "main.pdf"
+  "/Users/Marco/git/DLNN2020/Homework1/report/main.pdf"
   "main.run.xml"
