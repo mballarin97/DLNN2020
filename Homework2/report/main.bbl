@@ -1,0 +1,124 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{falcon2019pytorch}{article}{}
+      \name{author}{1}{}{%
+        {{hash=539d79d1ae90a2e1d67c78076b4c2fb8}{%
+           family={Falcon},
+           familyi={F\bibinitperiod},
+           given={WA},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{539d79d1ae90a2e1d67c78076b4c2fb8}
+      \strng{fullhash}{539d79d1ae90a2e1d67c78076b4c2fb8}
+      \strng{bibnamehash}{539d79d1ae90a2e1d67c78076b4c2fb8}
+      \strng{authorbibnamehash}{539d79d1ae90a2e1d67c78076b4c2fb8}
+      \strng{authornamehash}{539d79d1ae90a2e1d67c78076b4c2fb8}
+      \strng{authorfullhash}{539d79d1ae90a2e1d67c78076b4c2fb8}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GitHub. Note: https://github.com/PyTorchLightning/pytorch-lightning}
+      \field{title}{PyTorch Lightning}
+      \field{volume}{3}
+      \field{year}{2019}
+    \endentry
+    \entry{optuna_2019}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=2939d0d5b491018f7cc7812609071a79}{%
+           family={Akiba},
+           familyi={A\bibinitperiod},
+           given={Takuya},
+           giveni={T\bibinitperiod}}}%
+        {{hash=92311081bb41fd01eb1ce06f61805909}{%
+           family={Sano},
+           familyi={S\bibinitperiod},
+           given={Shotaro},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a841fb8471f00b147fdd8954fb01c03f}{%
+           family={Yanase},
+           familyi={Y\bibinitperiod},
+           given={Toshihiko},
+           giveni={T\bibinitperiod}}}%
+        {{hash=db73c7d77457602e9a75d75bbe181aba}{%
+           family={Ohta},
+           familyi={O\bibinitperiod},
+           given={Takeru},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d18b784f7f35111bc05bcbd245a34ce7}{%
+           family={Koyama},
+           familyi={K\bibinitperiod},
+           given={Masanori},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0da4c5b8107cb83a6bd4ba0c9b294621}
+      \strng{fullhash}{6a8f61fd5680dbd348b2b27b4a54d0d8}
+      \strng{bibnamehash}{0da4c5b8107cb83a6bd4ba0c9b294621}
+      \strng{authorbibnamehash}{0da4c5b8107cb83a6bd4ba0c9b294621}
+      \strng{authornamehash}{0da4c5b8107cb83a6bd4ba0c9b294621}
+      \strng{authorfullhash}{6a8f61fd5680dbd348b2b27b4a54d0d8}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 25rd {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining}
+      \field{title}{Optuna: A Next-generation Hyperparameter Optimization Framework}
+      \field{year}{2019}
+    \endentry
+    \entry{fong2020marginal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=202a5e045ac62eb14e75d1d38084d74e}{%
+           family={Fong},
+           familyi={F\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=79487106e794074eaf4c60af022e548a}{%
+           family={Holmes},
+           familyi={H\bibinitperiod},
+           given={CC},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{814eac5fba8fe05b22553108172c2102}
+      \strng{fullhash}{814eac5fba8fe05b22553108172c2102}
+      \strng{bibnamehash}{814eac5fba8fe05b22553108172c2102}
+      \strng{authorbibnamehash}{814eac5fba8fe05b22553108172c2102}
+      \strng{authornamehash}{814eac5fba8fe05b22553108172c2102}
+      \strng{authorfullhash}{814eac5fba8fe05b22553108172c2102}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biometrika}
+      \field{number}{2}
+      \field{title}{On the marginal likelihood and cross-validation}
+      \field{volume}{107}
+      \field{year}{2020}
+      \field{pages}{489\bibrangedash 496}
+      \range{pages}{8}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

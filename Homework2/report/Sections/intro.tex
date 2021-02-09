@@ -1,0 +1,15 @@
+In this report we will tackle different problems using the unsupervised deep learning framework. This means that we will
+have datasets $D$ formed of couples $\{(x_i)\}_{i=1,\dots,N}$, where $x_i$ are the samples. We will use the MNIST dataset, 
+an exhaustive dataset containing handwritten digits from $0$ to $9$ using $28\times 28$ images.
+We will use Pytorch as programming framework, and in particular Pytorch Lightning \cite{falcon2019pytorch}.
+
+The report will be divided into four main Sections:
+\begin{enumerate}
+    \item Introduction, where we introduce our work;
+    \item Autoencoder, where through an encoder and a decoder we generate sample images;
+    \item Denoiser, where we introduce some noise on the images to reconstruct, creating a network able to eliminate that noise;
+    \item Fine tuning, where we train a supervised classificator, starting from the trained encoder;
+    \item Variational Autoencoder, where we improve our approach using more advanced techniques;
+    \item Encoded space analysis, where we analyze the space of the encoded images and how it varies from the autoencoder to the variational autoencoder;
+    \item Appendix, where we will report images.
+\end{enumerate}

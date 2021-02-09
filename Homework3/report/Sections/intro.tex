@@ -1,0 +1,18 @@
+In this report we will tackle two different problems using the deep reinforcement learning framework. This means that we will
+have an environment where a agent can perform actions, which will change the state of the environment, and receive 
+a reward dependent on the new state. The reinforcement learning
+problems are usually represented like a game, and so if the agent solves the environment we can say that he wins the game. We will
+use a neural network to control the actions of the agent, and optimize it to win the environment. We will use the environments provided
+by OpenAI in their python library, namely gym \cite{gym}.
+
+The report will be divided as follows:
+\begin{enumerate}
+    \item Introduction, where we introduce our work;
+    \item Cartpole, where we try to balance a pole on a cart knowing its position, velocity and the pole's angle and angular velocity;
+    \item Cartpole with pixels, where we tackle the same problem as above, but using as input of the neural network only the rendered image of the cartpole. We will 
+        see that the learning will become really more difficult, since the network should infer the information about the state and then learn to control
+        the agent;
+    \item Lunar Landing, where we tackle a different problem: manage to land with a spaceship using its engines. The description is a little more 
+        involved of the one above, and we will so go into details in Section \ref{sec:LunLand};
+    \item Appendix, where we will report most of the images;
+\end{enumerate}

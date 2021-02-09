@@ -1,0 +1,21 @@
+\subsection{Methods}
+In this task we will use the prieviously trained encoder and apply the transfer learning technique. We use a pretrained network to speed-up the training 
+phase of a classification task. We extract from the autoencoder the Encoder architecture, and then add two new linear layers to perform the classification.
+We freeze the parameters of the Encoder, i.e. we do not perform learning on that part of the network. We instead train the new layers, which consist of:
+\begin{itemize}
+    \item An hidden layer with $64$ neurons;
+    \item The output layer with $10$ neurons.
+\end{itemize} 
+We use as activation function a ReLU and a negative log likelihood loss, which is optimal when we have the log-probabilities of the different input 
+classes as output of the network, as in this case.  
+
+What is really important is that, even though the full network has about $26\,300$ parameters we only have to train $1\,300$ of them, speeding up the 
+task.
+
+\subsection{Results}
+Even though $100$ epochs were given as the maximum number of epochs, $49$ were sufficient to achieve convergence.
+For this task we pick as test metrics the accuracy, i.e. the number of correctly classified samples over the number of total samples.
+We were able to achieve an accuracy of $0.94$, which is quite impressive compared to the accuracy we achieved in the first homework, where we tuned 
+all the hyperparameters and trained the whole network to perform the classification task, reaching an accuracy of $0.999$. 
+We can state that the transfer learning is a very powerful technique, since applying just a hidden layer and the output layer to a pre-trained encoder
+produced an high test accuracy.

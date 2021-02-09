@@ -1,0 +1,43 @@
+\subsection{Methods}
+All the information of the input are reduced in the encoded space. We will now study this space, using dimensionality reduction tools, i.e.:
+\begin{itemize}
+    \item Principal Component Analysis (PCA), a linear technique that investigates the dimensions with higher variability in the data;
+    \item t-distributed stochastic neighbor embedding (t-SNE), a non-linear technique. The algorithm tries to mantain the local distance between points, i.e.
+        keeps points that were distant in the high-dimensional space distant in the reduced space.
+\end{itemize}
+
+We will also put particular attention in the differences between the classical autencoder encoded space and the one of the variational autoencoder.
+
+\subsection{Results}
+I found this to be the most interesting task. We firstly analyzed the encoded space dimension of the classical autencoder using the PCA linear technique, as 
+we can see from Figure \ref{fig:aut_PCA}. However, the different digits seemed not well divided. This behaviour was in contrast with the results obtained in 
+Section \ref{sec:aut}. We so further study the problem using the t-SNE, and the results can be seen in Figure \ref{fig:aut_TSNE}. In this case the points cloud 
+are more separeted, helping us in the understanding the correct results obtained previously. This representation was, however, quite cumbersome, since interpreting
+the points clouds was not trivial. We so decided to study a new quantity, defined as follows. First, we reduce the dimensionality of the problem $d$ using our tools to
+$d=2$, and then we take the average and the standard deviation of the these coordinates for each digit, plotting ellipses which center is in the average, and have as axis
+the standard deviations. We see the results of this plot in Figure \ref{fig:dim_red_aut}.
+
+We then repeat the same analysis for the variational autencoder, as we can see from Figures \ref{fig:vae_PCA}, \ref{fig:vae_TSNE} and \ref{fig:dim_red_vae}.
+By confronting the behaviour in the two cases we can observe that in the VAE the ellipses are nearer to each other, in particular when digits presents similar patterns. We can also
+observe that, with respect to the classical autencoder, in the VAE the ellipses are more similar to circles, following the constraint of a normal distribution $\mathcal{N}(\vec{0}, \vec{1})$
+, which has the same  standard deviation along all the directions. We report in Table \ref{tab:diff} the average absolute value of the difference between the
+ standard deviation along the first encoded variable and the second one.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}[h]{|c|c|c|c|}
+        \multicolumn{2}{c}{Autoencoder} & \multicolumn{2}{c}{Variational} \\ \hline
+        PCA & t-SNE & PCA & t-SNE \\ \hline
+        $3.4$ & $4.7$ & $0.07$ & $2.7$ \\ \hline
+    \end{tabular}
+    \caption{Average absolute value of the difference between the standard deviation along the first encoded
+    variable and the second one, looking at both the Autoencoder and the VAE, for PCA and t-SNE.}
+    \label{tab:diff}
+\end{table}
+
+We can conclude that the VAE really has a more regular encoded space, and that the more informative way to do dimensionality reduction in this case is to use the t-SNE, i.e. to keep 
+the distances along the procedure.
+
+Finally, we report in Figure \ref{fig:gen_aut} some images generated sampling the encoded space with a gaussian distribution for the autoencoder, while in Figure \ref{fig:gen_vae} 
+we show the images obtained from the VAE with the same procedure. Again, we can observe that the regularity of the encoded space of the VAE generate better images when we perform
+a totally random sample.

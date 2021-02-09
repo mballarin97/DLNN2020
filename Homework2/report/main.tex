@@ -1,0 +1,60 @@
+\documentclass{article}
+\input{Sections/header}
+
+\begin{document}
+
+
+% Title
+\begin{center}
+    \huge
+    \textbf{Unsupervised Deep Learning}  % title
+    
+    \normalsize
+    \vspace{0.4cm}
+    \textbf{Marco Ballarin} 1228022  \\ % Author
+    marco.ballarin.6@studenti.unipd.it
+
+    \vspace{0.5cm}
+    \Large
+    \textsc{ Abstract}
+    \begin{adjustwidth}{30pt}{30pt}
+    \normalsize
+    \vspace{0.3cm}
+    \input{Sections/abstract}
+    \end{adjustwidth}
+\end{center}
+\vspace{0.2cm}
+%\maketitle
+%\tableofcontents
+%\begin{multicols}{2}
+
+\section{Introduction \label{sec:int}}
+\input{Sections/intro}
+
+\section{Autencoder \label{sec:aut}}
+\input{Sections/Autoencoder}
+
+\section{Denoiser \label{sec:den}}
+\input{Sections/Denoiser}
+
+\section{Fine Tuning \label{sec:ft}}
+\input{Sections/FineTuner}
+
+\section{Variational Autoencoders \label{sec:vae}}
+\input{Sections/VAE}
+
+\section{Encoded Space Analysis \label{sec:enc}}
+\input{Sections/EncSpace}
+
+
+\printbibliography
+
+
+\newpage
+\section{Appendix \label{sec:app}}
+\input{Sections/appendix}
+
+%\end{multicols}
+
+
+\end{document}

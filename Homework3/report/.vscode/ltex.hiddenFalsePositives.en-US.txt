@@ -1,0 +1,1 @@
+{"rule":"SENTENCE_FRAGMENT","sentence":"^\\QIf the lander moves away from landing pad it loses reward back.\\E$"}
