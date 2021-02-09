@@ -3,4 +3,4 @@ Deep learning and Neural Networks course labs&amp;homeworks&amp;assignments
 
 ## Homework 1: regression and classification task
 ## Homework 2: Autoencoders, denoiser and variational autoencoder
-## Homework 3: Unknown
+## Homework 3: Deep reinforcement learning on the CartPole and LunarLander environment from gym
